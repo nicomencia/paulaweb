@@ -2,19 +2,14 @@ import { useState, useEffect } from 'react';
 import { supabase } from './lib/supabase';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
-import About from './components/About';
-import Creations from './components/Creations';
-import Collections from './components/Collections';
-import CollectionDetail from './components/CollectionDetail';
-import Custom from './components/Custom';
-import Tallas from './components/Tallas';
+import QuienSoy from './components/QuienSoy';
+import Servicios from './components/Servicios';
 import Footer from './components/Footer';
 import AdminLogin from './components/AdminLogin';
 import AdminDashboard from './components/AdminDashboard';
 
 export default function App() {
   const [currentView, setCurrentView] = useState('home');
-  const [selectedCollection, setSelectedCollection] = useState(null);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
@@ -37,18 +32,10 @@ export default function App() {
 
   const renderContent = () => {
     switch (currentView) {
-      case 'colecciones':
-        return <Collections setCurrentView={setCurrentView} setSelectedCollection={setSelectedCollection} />;
-      case 'collection-detail':
-        return <CollectionDetail collectionId={selectedCollection} setCurrentView={setCurrentView} />;
-      case 'creations':
-        return <Creations setCurrentView={setCurrentView} />;
-      case 'custom':
-        return <Custom setCurrentView={setCurrentView} />;
-      case 'tallas':
-        return <Tallas />;
-      case 'sobre-mi':
-        return <About />;
+      case 'quien-soy':
+        return <QuienSoy />;
+      case 'servicios':
+        return <Servicios />;
       case 'admin':
         if (isAuthenticated) {
           return <AdminDashboard />;

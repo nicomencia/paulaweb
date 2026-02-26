@@ -1,0 +1,79 @@
+.quien-soy {
+  padding: var(--spacing-xl) 0;
+  background: var(--color-cream);
+}
+
+.quien-soy-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+  align-items: flex-start;
+}
+
+.quien-soy-text {
+  text-align: justify;
+}
+
+.quien-soy h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+  color: var(--color-blue);
+}
+
+.quien-soy p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-gray);
+}
+
+.quien-soy p:last-child {
+  margin-bottom: 0;
+}
+
+.psychologist-name {
+  font-weight: 700;
+  color: var(--color-black);
+  margin-top: var(--spacing-md);
+}
+
+.quien-soy-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.quien-soy-image img {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+@media (max-width: 768px) {
+  .quien-soy {
+    padding: 6rem 0 var(--spacing-xl) 0;
+  }
+
+  .quien-soy h2 {
+    margin-top: 5rem;
+  }
+
+  .quien-soy-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .quien-soy-text {
+    text-align: justify;
+  }
+
+  .quien-soy-image {
+    width: 300px;
+  }
+}

@@ -24,6 +24,13 @@
   margin-bottom: var(--spacing-sm);
 }
 
+.footer-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-blue);
+  margin-bottom: 0.25rem;
+}
+
 .footer-brand p {
   color: var(--color-gray);
   line-height: 1.6;

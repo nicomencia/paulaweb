@@ -19,7 +19,7 @@ export default function Navigation({ currentView, setCurrentView }) {
             onClick={() => handleNavClick('home')}
             aria-label="Ir a inicio"
           >
-            <img src="/logo.png" alt="Flueu Studio" className="nav-logo" />
+            <img src="/logo.png" alt="Paula Saste" className="nav-logo" />
           </button>
         )}
 
@@ -35,23 +35,13 @@ export default function Navigation({ currentView, setCurrentView }) {
 
         <ul className={`nav-menu ${isOpen ? 'nav-menu--open' : ''}`}>
           <li>
-            <button onClick={() => handleNavClick('colecciones')}>
-              Colecciones
+            <button onClick={() => handleNavClick('quien-soy')}>
+              Quién soy
             </button>
           </li>
           <li>
-            <button onClick={() => handleNavClick('creations')}>
-              Creaciones
-            </button>
-          </li>
-          <li>
-            <button onClick={() => handleNavClick('custom')}>
-              Custom
-            </button>
-          </li>
-          <li>
-            <button onClick={() => handleNavClick('sobre-mi')}>
-              Sobre mí
+            <button onClick={() => handleNavClick('servicios')}>
+              Servicios
             </button>
           </li>
         </ul>
