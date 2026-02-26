@@ -3,6 +3,7 @@ import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import QuienSoy from './components/QuienSoy';
 import Servicios from './components/Servicios';
+import Contactame from './components/Contactame';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -18,6 +19,8 @@ export default function App() {
         return <QuienSoy />;
       case 'servicios':
         return <Servicios />;
+      case 'contactame':
+        return <Contactame />;
       default:
         return <Hero />;
     }

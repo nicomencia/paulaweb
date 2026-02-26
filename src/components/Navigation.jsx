@@ -44,6 +44,11 @@ export default function Navigation({ currentView, setCurrentView }) {
               Servicios
             </button>
           </li>
+          <li>
+            <button onClick={() => handleNavClick('contactame')}>
+              Contáctame
+            </button>
+          </li>
         </ul>
       </div>
     </nav>
