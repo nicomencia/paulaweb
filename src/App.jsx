@@ -1,0 +1,70 @@
+import { useState, useEffect } from 'react';
+import { supabase } from './lib/supabase';
+import Navigation from './components/Navigation';
+import Hero from './components/Hero';
+import About from './components/About';
+import Creations from './components/Creations';
+import Collections from './components/Collections';
+import CollectionDetail from './components/CollectionDetail';
+import Custom from './components/Custom';
+import Tallas from './components/Tallas';
+import Footer from './components/Footer';
+import AdminLogin from './components/AdminLogin';
+import AdminDashboard from './components/AdminDashboard';
+
+export default function App() {
+  const [currentView, setCurrentView] = useState('home');
+  const [selectedCollection, setSelectedCollection] = useState(null);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentView]);
+
+  useEffect(() => {
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setIsAuthenticated(!!session);
+    });
+
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_event, session) => {
+      setIsAuthenticated(!!session);
+    });
+
+    return () => subscription.unsubscribe();
+  }, []);
+
+  const renderContent = () => {
+    switch (currentView) {
+      case 'colecciones':
+        return <Collections setCurrentView={setCurrentView} setSelectedCollection={setSelectedCollection} />;
+      case 'collection-detail':
+        return <CollectionDetail collectionId={selectedCollection} setCurrentView={setCurrentView} />;
+      case 'creations':
+        return <Creations setCurrentView={setCurrentView} />;
+      case 'custom':
+        return <Custom setCurrentView={setCurrentView} />;
+      case 'tallas':
+        return <Tallas />;
+      case 'sobre-mi':
+        return <About />;
+      case 'admin':
+        if (isAuthenticated) {
+          return <AdminDashboard />;
+        } else {
+          return <AdminLogin onLoginSuccess={() => setIsAuthenticated(true)} />;
+        }
+      default:
+        return <Hero />;
+    }
+  };
+
+  return (
+    <>
+      <Navigation currentView={currentView} setCurrentView={setCurrentView} />
+      {renderContent()}
+      <Footer setCurrentView={setCurrentView} />
+    </>
+  );
+}

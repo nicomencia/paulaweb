@@ -1,0 +1,79 @@
+.about {
+  padding: var(--spacing-xl) 0;
+  background: var(--color-cream);
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+  align-items: flex-start;
+}
+
+.about-text {
+  text-align: justify;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+  color: var(--color-blue);
+}
+
+.about p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-gray);
+}
+
+.about p:last-child {
+  margin-bottom: 0;
+}
+
+.artist-name {
+  font-weight: 700;
+  color: var(--color-black);
+  margin-top: var(--spacing-md);
+}
+
+.about-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about-image img {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 6rem 0 var(--spacing-xl) 0;
+  }
+
+  .about h2 {
+    margin-top: 5rem;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .about-text {
+    text-align: justify;
+  }
+
+  .about-image {
+    width: 300px;
+  }
+}
