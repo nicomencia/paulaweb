@@ -41,9 +41,6 @@ export default function Footer({ setCurrentView }) {
 
         <div className="footer-bottom">
           <p>&copy; {new Date().getFullYear()} Paula Sastre. Todos los derechos reservados.</p>
-          <div className="footer-admin">
-            <button onClick={() => setCurrentView('admin')}>Admin</button>
-          </div>
         </div>
       </div>
     </footer>
