@@ -6,7 +6,7 @@ export default function Footer({ setCurrentView }) {
       <div className="container">
         <div className="footer-content">
           <div className="footer-brand">
-            <p className="footer-name">Paula Saste</p>
+            <img src="/logo_letras.png" alt="Paula Saste" className="footer-logo" />
             <p>Psicóloga</p>
           </div>
 
