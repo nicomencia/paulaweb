@@ -6,7 +6,8 @@ export default function Footer({ setCurrentView }) {
       <div className="container">
         <div className="footer-content">
           <div className="footer-brand">
-            <img src="/logo_letras.png" alt="Paula Saste" className="footer-logo" />
+            <img src="/logo.png" alt="Paula Sastre" className="footer-logo" />
+            <p className="footer-name">Paula Sastre</p>
             <p>Psicóloga</p>
           </div>
 
@@ -39,7 +40,7 @@ export default function Footer({ setCurrentView }) {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Paula Saste. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Paula Sastre. Todos los derechos reservados.</p>
           <div className="footer-admin">
             <button onClick={() => setCurrentView('admin')}>Admin</button>
           </div>
