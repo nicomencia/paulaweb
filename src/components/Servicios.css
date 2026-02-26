@@ -49,7 +49,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--color-white);
+  background: #F8F6F4;
   overflow: hidden;
 }
 
@@ -62,7 +62,7 @@
 .servicio-imagen-placeholder {
   width: 100%;
   height: 100%;
-  background: var(--color-white);
+  background: #F8F6F4;
 }
 
 .servicio-titulo {
