@@ -1,5 +1,6 @@
 import './Servicios.css';
 
+
 const servicios = [
   {
     id: 'terapia-individual',
@@ -60,14 +61,18 @@ const proceso = [
   },
 ];
 
-export default function Servicios() {
+export default function Servicios({ setCurrentView }) {
   return (
     <section className="servicios">
       <div className="container">
         <h2>Servicios</h2>
         <div className="servicios-grid">
           {servicios.map((servicio) => (
-            <button className="servicio-card" key={servicio.id}>
+            <button
+              className="servicio-card"
+              key={servicio.id}
+              onClick={() => servicio.id === 'terapia-individual' && setCurrentView('terapia-individual')}
+            >
               <div className="servicio-imagen">
                 {servicio.imagen ? (
                   <img src={servicio.imagen} alt={servicio.titulo} />

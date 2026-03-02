@@ -5,6 +5,7 @@ import QuienSoy from './components/QuienSoy';
 import Servicios from './components/Servicios';
 import Contactame from './components/Contactame';
 import Footer from './components/Footer';
+import TerapiaIndividual from './components/TerapiaIndividual';
 
 export default function App() {
   const [currentView, setCurrentView] = useState('home');
@@ -18,7 +19,9 @@ export default function App() {
       case 'quien-soy':
         return <QuienSoy />;
       case 'servicios':
-        return <Servicios />;
+        return <Servicios setCurrentView={setCurrentView} />;
+      case 'terapia-individual':
+        return <TerapiaIndividual onBack={() => setCurrentView('servicios')} />;
       case 'contactame':
         return <Contactame />;
       default:
