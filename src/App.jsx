@@ -34,7 +34,7 @@ export default function App() {
       case 'contactame':
         return <Contactame />;
       default:
-        return <Hero />;
+        return <Hero setCurrentView={setCurrentView} />;
     }
   };
 
