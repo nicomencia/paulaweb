@@ -26,7 +26,7 @@ export default function QuienSoy() {
           </p>
         </div>
         <div className="qs-middle-images">
-          <div className="qs-img-placeholder">Paula</div>
+          <img src="/quiensoy.jpg" alt="Paula" className="qs-img-front" />
         </div>
       </div>
 
@@ -54,7 +54,7 @@ export default function QuienSoy() {
           </p>
         </div>
         <div className="qs-curriculum-image">
-          <div className="qs-img-placeholder">Stars</div>
+          <img src="/estrellas.png" alt="Estrellas" />
         </div>
       </div>
 
