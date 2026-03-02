@@ -38,6 +38,15 @@ export default function Hero({ setCurrentView }) {
         </div>
       </section>
 
+      <section className="hero-intro">
+        <p className="hero-intro-text">
+          La terapia es aquel lugar seguro en el que poder (re)conocerte y mirarte sin juicios, con calma y con la calidez de un acompañamiento profesional. Durante tu proceso cada emoción, pensamiento, y vivencia encuentran su lugar, permitiéndote integrar tus heridas y encontrar el equilibrio en este mundo lleno de caos. Recuperaremos tus herramientas, adquirirás nuevos aprendizajes y mejorarás la relación contigo misma y las demás.
+        </p>
+        <p className="hero-intro-quote">
+          El primer paso para sanar es reconocer que mereces vivir en bienestar.
+        </p>
+      </section>
+
       <section className="hero-servicios">
         <h2 className="hero-servicios-titulo">¿En qué puedo ayudarte?</h2>
         <div className="hero-servicios-grid">
