@@ -80,6 +80,17 @@
   line-height: 1.4;
 }
 
+.servicios-proceso-titulo {
+  text-align: center;
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-black);
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 @media (max-width: 768px) {
   .servicios {
     padding: 6rem 0 var(--spacing-xl) 0;

@@ -49,6 +49,25 @@ export default function Servicios() {
             </button>
           ))}
         </div>
+
+        <h3 className="servicios-proceso-titulo">El proceso...</h3>
+        <div className="servicios-grid">
+          {servicios.map((servicio) => (
+            <button className="servicio-card" key={`proceso-${servicio.id}`}>
+              <div className="servicio-imagen">
+                {servicio.imagen ? (
+                  <img src={servicio.imagen} alt={servicio.titulo} />
+                ) : (
+                  <div className="servicio-imagen-placeholder" />
+                )}
+              </div>
+              <p className="servicio-titulo">{servicio.titulo}</p>
+              {servicio.subtitulo && (
+                <p className="servicio-subtitulo">{servicio.subtitulo}</p>
+              )}
+            </button>
+          ))}
+        </div>
       </div>
     </section>
   );
