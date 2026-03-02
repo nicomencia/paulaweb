@@ -91,6 +91,17 @@
   letter-spacing: 0.05em;
 }
 
+.proceso-grid {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+  flex-wrap: nowrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+  overflow-x: auto;
+}
+
 .proceso-card {
   display: flex;
   flex-direction: column;

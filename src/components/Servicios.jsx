@@ -84,7 +84,7 @@ export default function Servicios() {
         </div>
 
         <h3 className="servicios-proceso-titulo">El proceso...</h3>
-        <div className="servicios-grid">
+        <div className="proceso-grid">
           {proceso.map((item) => (
             <div className="proceso-card" key={item.id}>
               <div className="proceso-imagen">
