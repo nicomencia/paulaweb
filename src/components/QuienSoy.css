@@ -126,6 +126,7 @@
   flex-shrink: 0;
   width: 260px;
   padding-top: var(--spacing-md);
+  margin-top: 6rem;
 }
 
 .qs-curriculum-image img {
