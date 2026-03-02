@@ -64,48 +64,36 @@ export default function QuienSoy() {
         </div>
         <div className="qs-podcast-grid">
           <a
-            href="https://www.youtube.com/watch?v=ejemplo1"
+            href="https://youtu.be/FXw3aifQb50?si=Tpvew6U3ftjnnW73"
             target="_blank"
             rel="noopener noreferrer"
-            className="qs-podcast-card qs-podcast-card--placeholder"
+            className="qs-podcast-card"
           >
-            <div className="qs-podcast-thumb">
-              <div className="qs-podcast-play" />
-              <span>Cuando la Soledad Duele | STQD</span>
-            </div>
+            <img src="https://img.youtube.com/vi/FXw3aifQb50/hqdefault.jpg" alt="Cuando la Soledad Duele | STQD" />
           </a>
           <a
-            href="https://www.youtube.com/watch?v=ejemplo2"
+            href="https://youtu.be/OhQU79-IToc?si=9_JQqxXAEyaGoFtm"
             target="_blank"
             rel="noopener noreferrer"
-            className="qs-podcast-card qs-podcast-card--placeholder"
+            className="qs-podcast-card"
           >
-            <div className="qs-podcast-thumb">
-              <div className="qs-podcast-play" />
-              <span>Buenas vs. malas FEMINISTAS</span>
-            </div>
+            <img src="https://img.youtube.com/vi/OhQU79-IToc/hqdefault.jpg" alt="Buenas vs. malas FEMINISTAS" />
           </a>
           <a
-            href="https://www.youtube.com/watch?v=ejemplo3"
+            href="https://youtu.be/tP46GdrOnLI?si=kHKSADAS6gi3er3X"
             target="_blank"
             rel="noopener noreferrer"
-            className="qs-podcast-card qs-podcast-card--placeholder"
+            className="qs-podcast-card"
           >
-            <div className="qs-podcast-thumb">
-              <div className="qs-podcast-play" />
-              <span>QUÉ HAGO si no puedo ESTAR SOLA</span>
-            </div>
+            <img src="https://img.youtube.com/vi/tP46GdrOnLI/hqdefault.jpg" alt="QUÉ HAGO si no puedo ESTAR SOLA" />
           </a>
           <a
-            href="https://www.youtube.com/watch?v=ejemplo4"
+            href="https://youtu.be/bt-7dpbUv6s?si=hWAgsHAH9cwA-Qo1"
             target="_blank"
             rel="noopener noreferrer"
-            className="qs-podcast-card qs-podcast-card--placeholder"
+            className="qs-podcast-card"
           >
-            <div className="qs-podcast-thumb">
-              <div className="qs-podcast-play" />
-              <span>ARTETERAPIA ¿QUÉ ES y para QUÉ sirve?</span>
-            </div>
+            <img src="https://img.youtube.com/vi/bt-7dpbUv6s/hqdefault.jpg" alt="ARTETERAPIA ¿QUÉ ES y para QUÉ sirve?" />
           </a>
         </div>
       </div>
