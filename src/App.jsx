@@ -6,6 +6,9 @@ import Servicios from './components/Servicios';
 import Contactame from './components/Contactame';
 import Footer from './components/Footer';
 import TerapiaIndividual from './components/TerapiaIndividual';
+import TerapiaPareja from './components/TerapiaPareja';
+import ArteterapiaGrupal from './components/ArteterapiaGrupal';
+import FormacionProfesionales from './components/FormacionProfesionales';
 
 export default function App() {
   const [currentView, setCurrentView] = useState('home');
@@ -22,6 +25,12 @@ export default function App() {
         return <Servicios setCurrentView={setCurrentView} />;
       case 'terapia-individual':
         return <TerapiaIndividual onBack={() => setCurrentView('servicios')} />;
+      case 'terapia-pareja':
+        return <TerapiaPareja onBack={() => setCurrentView('servicios')} />;
+      case 'arteterapia-grupal':
+        return <ArteterapiaGrupal onBack={() => setCurrentView('servicios')} />;
+      case 'formacion-profesionales':
+        return <FormacionProfesionales onBack={() => setCurrentView('servicios')} />;
       case 'contactame':
         return <Contactame />;
       default:

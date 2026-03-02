@@ -71,7 +71,7 @@ export default function Servicios({ setCurrentView }) {
             <button
               className="servicio-card"
               key={servicio.id}
-              onClick={() => servicio.id === 'terapia-individual' && setCurrentView('terapia-individual')}
+              onClick={() => setCurrentView(servicio.id)}
             >
               <div className="servicio-imagen">
                 {servicio.imagen ? (

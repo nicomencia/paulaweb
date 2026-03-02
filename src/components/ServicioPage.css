@@ -1,4 +1,4 @@
-.terapia-individual {
+.servicio-page {
   min-height: 100vh;
   background: var(--color-cream);
   padding: var(--spacing-xl) 0 var(--spacing-lg);
@@ -6,13 +6,13 @@
   color: var(--color-black);
 }
 
-.ti-header {
+.sp-header {
   position: relative;
   text-align: center;
   padding: 0 var(--spacing-md) var(--spacing-lg);
 }
 
-.ti-back {
+.sp-back {
   position: absolute;
   left: var(--spacing-md);
   top: 0;
@@ -27,11 +27,11 @@
   transition: opacity 0.2s ease;
 }
 
-.ti-back:hover {
+.sp-back:hover {
   opacity: 1;
 }
 
-.ti-titulo {
+.sp-titulo {
   font-size: clamp(2rem, 6vw, 4rem);
   font-weight: 900;
   text-transform: uppercase;
@@ -39,7 +39,7 @@
   color: var(--color-black);
 }
 
-.ti-body {
+.sp-body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--spacing-lg);
@@ -48,45 +48,46 @@
   padding: var(--spacing-lg) var(--spacing-md);
 }
 
-.ti-columna-izquierda {
+.sp-columna {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
 }
 
-.ti-temas {
+.sp-columna-center {
+  align-items: center;
+  text-align: center;
+}
+
+.sp-temas {
   list-style: none;
   padding: 0;
   margin: 0;
   text-align: center;
 }
 
-.ti-temas li {
+.sp-temas li {
   font-size: clamp(0.95rem, 1.5vw, 1.15rem);
   line-height: 1.9;
   color: var(--color-black);
 }
 
-.ti-temas-intro {
+.sp-temas-intro {
   font-style: italic;
-  margin-bottom: 0.25rem;
 }
 
-.ti-columna-derecha {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: var(--spacing-sm);
-  text-align: center;
-}
-
-.ti-columna-derecha p {
+.sp-columna p {
   font-size: clamp(0.95rem, 1.5vw, 1.15rem);
   line-height: 1.7;
   color: var(--color-black);
 }
 
-.ti-precios {
+.sp-columna-center p {
+  text-align: center;
+}
+
+.sp-precios {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1200px;
@@ -95,19 +96,19 @@
   gap: var(--spacing-md);
 }
 
-.ti-precio-bloque {
+.sp-precio-bloque {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: var(--spacing-sm);
 }
 
-.ti-precio-bloque--right {
+.sp-precio-bloque--right {
   align-items: flex-end;
   justify-content: center;
 }
 
-.ti-precio-ciudad {
+.sp-precio-ciudad {
   font-size: clamp(1.5rem, 4vw, 2.5rem);
   font-weight: 900;
   text-transform: uppercase;
@@ -115,24 +116,24 @@
   color: var(--color-black);
 }
 
-.ti-precio-valor {
+.sp-precio-valor {
   font-size: clamp(1rem, 2vw, 1.25rem);
   color: var(--color-black);
 }
 
-.ti-precio-lugar {
+.sp-precio-lugar {
   display: flex;
   flex-direction: column;
   gap: 0.15rem;
 }
 
-.ti-precio-lugar p {
+.sp-precio-lugar p {
   font-size: clamp(0.9rem, 1.5vw, 1.1rem);
   color: var(--color-black);
   line-height: 1.6;
 }
 
-.ti-sesiones {
+.sp-sesiones {
   text-align: center;
   font-style: italic;
   font-size: clamp(0.95rem, 1.5vw, 1.15rem);
@@ -140,25 +141,48 @@
   padding: var(--spacing-md) var(--spacing-md) 0;
 }
 
+.sp-texto-centrado {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--spacing-lg) var(--spacing-md) 0;
+  text-align: center;
+}
+
+.sp-texto-centrado p {
+  font-size: clamp(0.95rem, 1.5vw, 1.15rem);
+  line-height: 1.8;
+  color: var(--color-black);
+  margin-bottom: var(--spacing-sm);
+}
+
+.sp-texto-centrado p:last-child {
+  margin-bottom: 0;
+}
+
+.sp-single-col {
+  grid-template-columns: 1fr;
+  max-width: 700px;
+}
+
 @media (max-width: 768px) {
-  .terapia-individual {
+  .servicio-page {
     padding: 5rem 0 var(--spacing-lg);
   }
 
-  .ti-body {
+  .sp-body {
     grid-template-columns: 1fr;
     gap: var(--spacing-md);
   }
 
-  .ti-precios {
+  .sp-precios {
     grid-template-columns: 1fr;
   }
 
-  .ti-precio-bloque--right {
+  .sp-precio-bloque--right {
     align-items: flex-start;
   }
 
-  .ti-back {
+  .sp-back {
     position: static;
     display: block;
     margin-bottom: var(--spacing-sm);
