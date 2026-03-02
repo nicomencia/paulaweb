@@ -31,19 +31,19 @@ const proceso = [
   {
     id: 'primera-visita',
     titulo: 'Primera Visita',
-    subtitulo: '',
+    subtitulo: 'En esta sesión...',
     imagen: '/servicios_individual.png',
   },
   {
-    id: 'proceso-2',
-    titulo: 'Terapia de Pareja',
-    subtitulo: 'Barcelona · Online',
+    id: 'evaluacion',
+    titulo: 'Evaluación',
+    subtitulo: 'Dedicaremos...',
     imagen: '/servicios_pareja.png',
   },
   {
-    id: 'proceso-3',
-    titulo: 'Arteterapia Grupal',
-    subtitulo: null,
+    id: 'devolucion',
+    titulo: 'Devolución',
+    subtitulo: 'Juntas...',
     imagen: '/servicios_grupo.png',
   },
   {
