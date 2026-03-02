@@ -29,8 +29,8 @@ const servicios = [
 
 const proceso = [
   {
-    id: 'proceso-1',
-    titulo: 'Terapia Individual',
+    id: 'primera-visita',
+    titulo: 'Primera Visita',
     subtitulo: 'Barcelona · Online',
     imagen: '/servicios_individual.png',
   },
@@ -48,6 +48,12 @@ const proceso = [
   },
   {
     id: 'proceso-4',
+    titulo: 'Formación para Profesionales',
+    subtitulo: null,
+    imagen: '/servicios_formacion.png',
+  },
+  {
+    id: 'proceso-5',
     titulo: 'Formación para Profesionales',
     subtitulo: null,
     imagen: '/servicios_formacion.png',
