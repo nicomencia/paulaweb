@@ -49,7 +49,7 @@ export default function Hero({ setCurrentView }) {
         </div>
       </section>
 
-      <section className="hero-servicios">
+      <section className="hero-servicios" id="hero-servicios">
         <h2 className="hero-servicios-titulo">¿En qué puedo ayudarte?</h2>
         <div className="hero-servicios-grid">
           {servicios.map((servicio) => (

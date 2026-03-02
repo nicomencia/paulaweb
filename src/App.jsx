@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import QuienSoy from './components/QuienSoy';
@@ -13,14 +13,30 @@ import FormacionProfesionales from './components/FormacionProfesionales';
 export default function App() {
   const [currentView, setCurrentView] = useState('home');
   const [previousView, setPreviousView] = useState('home');
+  const scrollToServiciosRef = useRef(false);
 
   useEffect(() => {
+    if (scrollToServiciosRef.current) {
+      scrollToServiciosRef.current = false;
+      const el = document.getElementById('hero-servicios');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+        return;
+      }
+    }
     window.scrollTo(0, 0);
   }, [currentView]);
 
-  const navigateTo = (view) => {
+  const navigateTo = (view, scrollToServices = false) => {
     setPreviousView(currentView);
+    if (view === 'home' && scrollToServices) {
+      scrollToServiciosRef.current = true;
+    }
     setCurrentView(view);
+  };
+
+  const goBack = () => {
+    navigateTo(previousView, previousView === 'home');
   };
 
   const renderContent = () => {
@@ -30,13 +46,13 @@ export default function App() {
       case 'servicios':
         return <Servicios setCurrentView={navigateTo} />;
       case 'terapia-individual':
-        return <TerapiaIndividual onBack={() => navigateTo(previousView)} />;
+        return <TerapiaIndividual onBack={goBack} />;
       case 'terapia-pareja':
-        return <TerapiaPareja onBack={() => navigateTo(previousView)} />;
+        return <TerapiaPareja onBack={goBack} />;
       case 'arteterapia-grupal':
-        return <ArteterapiaGrupal onBack={() => navigateTo(previousView)} />;
+        return <ArteterapiaGrupal onBack={goBack} />;
       case 'formacion-profesionales':
-        return <FormacionProfesionales onBack={() => navigateTo(previousView)} />;
+        return <FormacionProfesionales onBack={goBack} />;
       case 'contactame':
         return <Contactame />;
       default:
