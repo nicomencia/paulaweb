@@ -32,31 +32,31 @@ const proceso = [
     id: 'primera-visita',
     titulo: 'Primera Visita',
     subtitulo: 'En esta sesión...',
-    imagen: '/servicios_individual.png',
+    imagen: '/procesos_visita.png',
   },
   {
     id: 'evaluacion',
     titulo: 'Evaluación',
     subtitulo: 'Dedicaremos...',
-    imagen: '/servicios_pareja.png',
+    imagen: '/procesos_evaluacion.png',
   },
   {
     id: 'devolucion',
     titulo: 'Devolución',
     subtitulo: 'Juntas...',
-    imagen: '/servicios_grupo.png',
+    imagen: '/procesos_devolucion.png',
   },
   {
     id: 'proceso',
     titulo: 'Proceso',
     subtitulo: 'Caminaremos...',
-    imagen: '/servicios_formacion.png',
+    imagen: '/procesos_proceso.png',
   },
   {
     id: 'cierre',
     titulo: 'Cierre',
     subtitulo: 'Alta...',
-    imagen: '/servicios_formacion.png',
+    imagen: '/procesos_cierre.png',
   },
 ];
 
