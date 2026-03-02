@@ -17,13 +17,13 @@ const servicios = [
     id: 'arteterapia-grupal',
     titulo: 'Arteterapia Grupal',
     subtitulo: null,
-    imagen: null,
+    imagen: '/grupo.png',
   },
   {
     id: 'formacion-profesionales',
     titulo: 'Formación para Profesionales',
     subtitulo: null,
-    imagen: null,
+    imagen: '/formacion.png',
   },
 ];
 
