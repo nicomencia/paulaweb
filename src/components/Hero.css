@@ -140,7 +140,6 @@
 .hero-sobre {
   background: var(--color-cream);
   padding: var(--spacing-xl) var(--spacing-lg);
-  border-top: 1px solid rgba(0,0,0,0.08);
 }
 
 .hero-sobre-top {
