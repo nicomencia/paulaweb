@@ -24,7 +24,7 @@ export default function Contactame() {
         <div className="contactame-izquierda">
           <div className="contactame-flower-wrap">
             <img src="/flor.png" alt="" className="contactame-flower" />
-            <img src="/paula.jpg" alt="Paula Saste" className="contactame-paula" />
+            <img src="/paula.jpg" alt="Paula Sastre" className="contactame-paula" />
           </div>
           <a href="mailto:paulaysusespacios@gmail.com" className="contactame-email">
             paulaysusespacios@gmail.com
