@@ -58,6 +58,58 @@ export default function QuienSoy() {
         </div>
       </div>
 
+      <div className="qs-podcast">
+        <div className="qs-podcast-header">
+          <img src="/podcast.png" alt="Podcast" className="qs-podcast-banner" />
+        </div>
+        <div className="qs-podcast-grid">
+          <a
+            href="https://www.youtube.com/watch?v=ejemplo1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="qs-podcast-card qs-podcast-card--placeholder"
+          >
+            <div className="qs-podcast-thumb">
+              <div className="qs-podcast-play" />
+              <span>Cuando la Soledad Duele | STQD</span>
+            </div>
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=ejemplo2"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="qs-podcast-card qs-podcast-card--placeholder"
+          >
+            <div className="qs-podcast-thumb">
+              <div className="qs-podcast-play" />
+              <span>Buenas vs. malas FEMINISTAS</span>
+            </div>
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=ejemplo3"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="qs-podcast-card qs-podcast-card--placeholder"
+          >
+            <div className="qs-podcast-thumb">
+              <div className="qs-podcast-play" />
+              <span>QUÉ HAGO si no puedo ESTAR SOLA</span>
+            </div>
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=ejemplo4"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="qs-podcast-card qs-podcast-card--placeholder"
+          >
+            <div className="qs-podcast-thumb">
+              <div className="qs-podcast-play" />
+              <span>ARTETERAPIA ¿QUÉ ES y para QUÉ sirve?</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
     </section>
   );
 }
