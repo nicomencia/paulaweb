@@ -31,7 +31,7 @@ const proceso = [
   {
     id: 'primera-visita',
     titulo: 'Primera Visita',
-    subtitulo: 'Barcelona · Online',
+    subtitulo: '',
     imagen: '/servicios_individual.png',
   },
   {
