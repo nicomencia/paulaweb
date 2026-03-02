@@ -86,6 +86,9 @@
 .hero-intro {
   background: var(--color-cream);
   padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.hero-intro-inner {
   max-width: 860px;
   margin: 0 auto;
 }
