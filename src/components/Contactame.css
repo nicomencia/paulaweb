@@ -1,144 +1,170 @@
 .contactame {
-  padding: var(--spacing-xl) 0;
   background: var(--color-cream);
-  min-height: 80vh;
+  min-height: 100vh;
+  padding: var(--spacing-xl) 0 var(--spacing-lg);
+  font-family: var(--font-serif);
 }
 
-.contactame h2 {
-  text-align: center;
-  margin-bottom: var(--spacing-sm);
-  margin-top: var(--spacing-lg);
-  color: var(--color-blue);
-}
-
-.contactame-intro {
-  text-align: center;
-  font-size: 1.125rem;
-  color: var(--color-gray);
-  max-width: 560px;
-  margin: 0 auto var(--spacing-lg);
-  line-height: 1.8;
-}
-
-.contactame-content {
+.contactame-layout {
   display: grid;
-  grid-template-columns: 1fr 1.6fr;
-  gap: var(--spacing-lg);
-  max-width: 900px;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(100vh - 80px);
+  max-width: 1400px;
   margin: 0 auto;
-  align-items: flex-start;
 }
 
-.contactame-info {
+.contactame-izquierda {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md);
-}
-
-.contact-item {
-  display: flex;
   align-items: flex-start;
-  gap: var(--spacing-sm);
-}
-
-.contact-icon {
-  width: 44px;
-  height: 44px;
-  background: var(--color-white);
-  border: 1px solid var(--color-light-gray);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  color: var(--color-blue);
+  padding: var(--spacing-lg) var(--spacing-md) var(--spacing-md) var(--spacing-lg);
 }
 
-.contact-item h4 {
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-gray);
-  margin-bottom: 0.25rem;
-  font-weight: 600;
+.contactame-flower-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
 }
 
-.contact-item a {
-  font-size: 1rem;
+.contactame-flower {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.contactame-paula {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: 110px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.contactame-email {
+  display: block;
+  font-size: clamp(0.85rem, 1.2vw, 1rem);
   color: var(--color-black);
-  transition: color 0.2s ease;
+  margin-top: var(--spacing-sm);
+  font-family: var(--font-serif);
+  transition: opacity 0.2s ease;
 }
 
-.contact-item a:hover {
-  color: var(--color-blue);
-  opacity: 1;
+.contactame-email:hover {
+  opacity: 0.6;
+}
+
+.contactame-social {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
+  color: var(--color-black);
+}
+
+.contactame-social a {
+  color: var(--color-black);
+  transition: opacity 0.2s ease;
+}
+
+.contactame-social a:hover {
+  opacity: 0.6;
+}
+
+.contactame-derecha {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-md) var(--spacing-md);
+}
+
+.contactame-titulo {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: var(--spacing-md);
+  font-family: var(--font-serif);
 }
 
 .contactame-form {
-  background: var(--color-white);
+  width: 100%;
+  max-width: 480px;
+  border: 2px solid var(--color-black);
   padding: var(--spacing-md);
-  border: 1px solid var(--color-light-gray);
 }
 
-.form-group {
+.form-row {
   display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  margin-bottom: var(--spacing-sm);
+  align-items: center;
+  gap: var(--spacing-sm);
+  border-bottom: 1.5px solid var(--color-black);
+  padding: 0.6rem 0;
 }
 
-.form-group label {
-  font-size: 0.85rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--color-gray);
-  font-weight: 600;
+.form-row:last-of-type {
+  border-bottom: none;
 }
 
-.form-group input,
-.form-group textarea {
-  font-family: var(--font-sans);
+.form-check {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-black);
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.form-check--top {
+  align-self: flex-start;
+  margin-top: 0.15rem;
+}
+
+.form-row input,
+.form-row textarea {
+  flex: 1;
+  font-family: var(--font-serif);
   font-size: 1rem;
   color: var(--color-black);
-  background: var(--color-cream);
-  border: 1px solid var(--color-light-gray);
-  padding: 0.75rem 1rem;
+  background: transparent;
+  border: none;
   outline: none;
-  transition: border-color 0.2s ease;
   resize: none;
+  padding: 0.25rem 0;
+  line-height: 1.5;
 }
 
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-  color: #aaa;
+.form-row input::placeholder,
+.form-row textarea::placeholder {
+  color: #999;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: var(--color-blue);
+.form-row--textarea {
+  align-items: flex-start;
 }
 
 .contactame-btn {
-  width: 100%;
-  padding: 0.9rem;
-  background: var(--color-blue);
-  color: var(--color-white);
-  font-family: var(--font-sans);
+  margin-top: var(--spacing-sm);
+  padding: 0.75rem 2.5rem;
+  background: var(--color-black);
+  color: var(--color-cream);
+  font-family: var(--font-serif);
   font-size: 1rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   cursor: pointer;
   border: none;
   transition: opacity 0.3s ease;
-  margin-top: var(--spacing-xs);
 }
 
 .contactame-btn:hover {
-  opacity: 0.85;
+  opacity: 0.75;
 }
 
 .contactame-success {
-  text-align: center;
-  padding: var(--spacing-md);
+  padding: var(--spacing-md) 0;
   color: var(--color-gray);
   font-size: 1.125rem;
   line-height: 1.8;
@@ -146,15 +172,28 @@
 
 @media (max-width: 768px) {
   .contactame {
-    padding: 6rem 0 var(--spacing-xl) 0;
+    padding: 5rem 0 var(--spacing-lg);
   }
 
-  .contactame h2 {
-    margin-top: 5rem;
-  }
-
-  .contactame-content {
+  .contactame-layout {
     grid-template-columns: 1fr;
-    gap: var(--spacing-md);
+  }
+
+  .contactame-izquierda {
+    padding: var(--spacing-md);
+    align-items: center;
+  }
+
+  .contactame-flower-wrap {
+    max-width: 320px;
+  }
+
+  .contactame-derecha {
+    padding: var(--spacing-md);
+    align-items: center;
+  }
+
+  .contactame-form {
+    max-width: 100%;
   }
 }
