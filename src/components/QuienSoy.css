@@ -1,6 +1,6 @@
 .quien-soy {
   background: var(--color-cream);
-  padding-top: var(--spacing-xl);
+  padding-top: calc(var(--spacing-xl) + 60px);
   padding-bottom: var(--spacing-xl);
 }
 
