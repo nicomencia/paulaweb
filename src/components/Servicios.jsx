@@ -47,9 +47,9 @@ const proceso = [
     imagen: '/servicios_grupo.png',
   },
   {
-    id: 'proceso-4',
-    titulo: 'Formación para Profesionales',
-    subtitulo: null,
+    id: 'proceso',
+    titulo: 'Proceso',
+    subtitulo: 'Caminaremos...',
     imagen: '/servicios_formacion.png',
   },
   {
