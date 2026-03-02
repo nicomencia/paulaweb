@@ -85,7 +85,7 @@
 
 .hero-intro {
   background: var(--color-cream);
-  padding: var(--spacing-xl) var(--spacing-lg);
+  padding: var(--spacing-xl) var(--spacing-lg) var(--spacing-md);
 }
 
 .hero-intro-inner {
@@ -113,7 +113,7 @@
 }
 
 .hero-servicios {
-  padding: var(--spacing-xl) var(--spacing-lg);
+  padding: var(--spacing-md) var(--spacing-lg) var(--spacing-xl);
   background: var(--color-cream);
 }
 
