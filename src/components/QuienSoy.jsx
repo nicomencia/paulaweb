@@ -59,6 +59,7 @@ export default function QuienSoy() {
       </div>
 
       <div className="qs-podcast">
+        <div className="qs-podcast-inner">
         <div className="qs-podcast-header">
           <img src="/podcast.png" alt="Podcast" className="qs-podcast-banner" />
         </div>
@@ -95,6 +96,7 @@ export default function QuienSoy() {
           >
             <img src="https://img.youtube.com/vi/bt-7dpbUv6s/hqdefault.jpg" alt="ARTETERAPIA ¿QUÉ ES y para QUÉ sirve?" />
           </a>
+        </div>
         </div>
       </div>
 

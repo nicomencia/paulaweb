@@ -137,9 +137,14 @@
 }
 
 .qs-podcast {
+  background: #959E66;
+  margin-top: var(--spacing-xl);
+  padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.qs-podcast-inner {
   max-width: 1200px;
-  margin: var(--spacing-xl) auto 0;
-  padding: 0 var(--spacing-lg);
+  margin: 0 auto;
 }
 
 .qs-podcast-header {
