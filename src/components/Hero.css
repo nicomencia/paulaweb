@@ -137,6 +137,90 @@
   padding: 0 var(--spacing-sm);
 }
 
+.hero-sobre {
+  background: var(--color-cream);
+  padding: var(--spacing-xl) var(--spacing-lg);
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.hero-sobre-top {
+  display: flex;
+  gap: var(--spacing-xl);
+  max-width: 1000px;
+  margin: 0 auto var(--spacing-xl);
+  align-items: flex-start;
+}
+
+.hero-sobre-text {
+  flex: 1;
+}
+
+.hero-sobre-text p {
+  font-family: var(--font-serif);
+  font-size: clamp(0.9rem, 1.3vw, 1.05rem);
+  line-height: 1.8;
+  color: var(--color-black);
+  margin: 0 0 var(--spacing-sm);
+}
+
+.hero-sobre-titulo {
+  font-family: var(--font-serif);
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  font-weight: 600;
+  color: var(--color-black);
+  margin: 0 0 var(--spacing-md);
+}
+
+.hero-sobre-photo {
+  flex-shrink: 0;
+  width: 200px;
+}
+
+.hero-sobre-photo img {
+  width: 100%;
+  display: block;
+}
+
+.hero-sobre-bottom {
+  display: flex;
+  gap: var(--spacing-xl);
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.hero-sobre-imagen {
+  flex-shrink: 0;
+  width: 340px;
+}
+
+.hero-sobre-imagen img {
+  width: 100%;
+  display: block;
+}
+
+.hero-sobre-cita {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.hero-sobre-cita p {
+  font-family: var(--font-serif);
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  line-height: 1.7;
+  color: var(--color-black);
+  margin: 0 0 var(--spacing-sm);
+}
+
+.hero-sobre-cita cite {
+  font-family: var(--font-serif);
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  font-style: normal;
+  color: var(--color-black);
+}
+
 @media (max-width: 768px) {
   .hero {
     background-size: contain;
@@ -169,5 +253,26 @@
   .hero-social svg {
     width: 20px;
     height: 20px;
+  }
+
+  .hero-sobre-top {
+    flex-direction: column-reverse;
+  }
+
+  .hero-sobre-photo {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .hero-sobre-bottom {
+    flex-direction: column;
+  }
+
+  .hero-sobre-imagen {
+    width: 100%;
+  }
+
+  .hero-sobre-cita {
+    text-align: left;
   }
 }

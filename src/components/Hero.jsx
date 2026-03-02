@@ -69,6 +69,31 @@ export default function Hero({ setCurrentView }) {
           ))}
         </div>
       </section>
+
+      <section className="hero-sobre">
+        <div className="hero-sobre-top">
+          <div className="hero-sobre-text">
+            <h3 className="hero-sobre-titulo">Sobre mi...</h3>
+            <p>Soy Paula Sastre Valverde, psicóloga sanitaria y personita curiosa siempre buscando la forma de conectar consigo misma, su creatividad, las demás y con el entorno en el que vive.</p>
+            <p>Mi enfoque terapéutico se basa en la integración de diferentes modelos y técnicas, lo cual me permite adaptarme a las necesidades de las personas a las que acompaño y ofrecerles las visiones más adecuadas a su momento vital.</p>
+            <p>Dada mi diversa formación y experiencia, integro la perspectiva feminista e interseccional, reconociendo los malestares y opresiones sistemáticas que nos atraviesan y ofreciendo una mirada crítica sobre nuestro contexto y sus aprendizajes.</p>
+            <p>Ofrezco un trabajo integral de cuerpo, mente y emociones, no dejando nada atrás.</p>
+            <p>Recuerda que eres mucho más que tus problemas y en esto se basa mi intervención. Miraremos con respeto y ternura cada parte de tu ser y (re)conoceremos tus herramientas y fortalezas, mientras integramos aquello que busca su lugar.</p>
+          </div>
+          <div className="hero-sobre-photo">
+            <img src="/paula.jpg" alt="Paula Sastre" />
+          </div>
+        </div>
+        <div className="hero-sobre-bottom">
+          <div className="hero-sobre-imagen">
+            <img src="/image.png" alt="" />
+          </div>
+          <blockquote className="hero-sobre-cita">
+            <p>Conozca todas las teorías, domine todas las técnicas, pero al tocar un alma humana sea apenas otra alma humana.</p>
+            <cite>Carl G. Jung</cite>
+          </blockquote>
+        </div>
+      </section>
     </>
   );
 }
