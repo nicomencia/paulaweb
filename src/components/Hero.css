@@ -83,6 +83,12 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
   .hero-content {
     display: flex;
     flex-direction: column;
