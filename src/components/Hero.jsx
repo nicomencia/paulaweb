@@ -32,6 +32,7 @@ export default function Hero({ setCurrentView }) {
   return (
     <>
       <section className="hero">
+        <img src="/fondo.png" alt="" className="hero-bg-img" aria-hidden="true" />
         <div className="hero-content">
           <h1 className="hero-name">Paula Sastre Valverde</h1>
           <p className="hero-subtitle">Psicóloga Integrativa</p>

@@ -8,6 +8,10 @@
   position: relative;
 }
 
+.hero-bg-img {
+  display: none;
+}
+
 .hero-content {
   text-align: center;
   z-index: 1;
@@ -245,17 +249,30 @@
 
 @media (max-width: 768px) {
   .hero {
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: none;
+    height: auto;
+    position: relative;
+    display: block;
+  }
+
+  .hero-bg-img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 
   .hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
-    padding-top: 160px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-top: 80px;
   }
 
   .hero-name,
