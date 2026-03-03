@@ -70,6 +70,7 @@ export default function Hero({ setCurrentView }) {
         </div>
       </section>
 
+      <div className="hero-sobre-spacer" />
       <section className="hero-sobre">
         <div className="hero-sobre-top">
           <div className="hero-sobre-text">
