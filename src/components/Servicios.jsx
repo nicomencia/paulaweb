@@ -38,7 +38,7 @@ const proceso = [
   {
     id: 'evaluacion',
     titulo: 'Evaluación',
-    subtitulo: 'Dedicaremos...',
+    subtitulo: 'Dedicaremos las primeras sesiones a mirar en profundidad tu historia vital y vincular para recolocar el de dónde vienes y cómo has llegado hasta aquí.',
     imagen: '/procesos_evaluacion.png',
   },
   {
