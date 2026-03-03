@@ -308,6 +308,7 @@
     grid-column: 1;
     grid-row: 1;
     text-align: left;
+    padding-top: var(--spacing-lg);
   }
 
   .hero-intro-quote {
