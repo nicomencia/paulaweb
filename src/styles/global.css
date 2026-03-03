@@ -18,8 +18,8 @@
   --spacing-lg: 4rem;
   --spacing-xl: 6rem;
 
-  --font-serif: 'Crimson Text', 'Georgia', 'Times New Roman', serif;
-  --font-sans: 'Crimson Text', 'Georgia', 'Times New Roman', serif;
+  --font-serif: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
+  --font-sans: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
 }
 
 body {
