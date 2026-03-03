@@ -178,7 +178,7 @@
 }
 
 .hero-sobre-titulo {
-  font-family: var(--font-serif);
+  font-family: var(--font-title);
   font-size: clamp(1.1rem, 1.8vw, 1.4rem);
   font-weight: 600;
   color: var(--color-black);
