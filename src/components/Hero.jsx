@@ -87,7 +87,7 @@ export default function Hero({ setCurrentView }) {
         </div>
         <div className="hero-sobre-bottom">
           <div className="hero-sobre-imagen">
-            <img src="/sobreMi2.jpg" alt="" />
+            <img src="/sobreMi2.png" alt="" />
           </div>
           <blockquote className="hero-sobre-cita">
             <p>Conozca todas las teorías, domine todas las técnicas, pero al tocar un alma humana sea apenas otra alma humana.</p>
