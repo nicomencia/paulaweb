@@ -201,7 +201,7 @@
 
 .hero-sobre-bottom {
   display: flex;
-  align-items: flex-end;
+  align-items: stretch;
   gap: var(--spacing-xl);
   max-width: 1200px;
   margin: 0 auto;
@@ -220,9 +220,10 @@
 
 .hero-sobre-cita {
   flex: 1;
-  margin: 0;
+  margin: auto 0 0 0;
   padding: 0;
   text-align: right;
+  align-self: flex-end;
 }
 
 .hero-sobre-cita p {
