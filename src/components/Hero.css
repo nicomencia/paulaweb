@@ -163,12 +163,15 @@
 }
 
 .hero-sobre-top {
+  display: flex;
+  gap: var(--spacing-xl);
   max-width: 1000px;
   margin: 0 auto var(--spacing-sm);
+  align-items: flex-start;
 }
 
 .hero-sobre-text {
-  width: 100%;
+  flex: 1;
 }
 
 .hero-sobre-text p {
@@ -188,8 +191,8 @@
 }
 
 .hero-sobre-photo {
+  flex-shrink: 0;
   width: 200px;
-  margin: var(--spacing-sm) 0 var(--spacing-sm);
 }
 
 .hero-sobre-photo img {
@@ -285,6 +288,10 @@
   .hero-intro-quote {
     grid-column: 1;
     grid-row: 2;
+  }
+
+  .hero-sobre-top {
+    flex-direction: column-reverse;
   }
 
   .hero-sobre-photo {
