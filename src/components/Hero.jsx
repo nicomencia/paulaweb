@@ -44,7 +44,7 @@ export default function Hero({ setCurrentView }) {
             La terapia es aquel lugar seguro en el que poder (re)conocerte y mirarte sin juicios, con calma y con la calidez de un acompañamiento profesional. Durante tu proceso cada emoción, pensamiento, y vivencia encuentran su lugar, permitiéndote integrar tus heridas y encontrar el equilibrio en este mundo lleno de caos. Recuperaremos tus herramientas, adquirirás nuevos aprendizajes y mejorarás la relación contigo misma y las demás.
           </p>
           <p className="hero-intro-quote">
-            El primer paso para sanar es reconocer que mereces vivir en bienestar.
+            <em>El primer paso para sanar es reconocer<br />que mereces vivir en bienestar.</em>
           </p>
         </div>
       </section>
