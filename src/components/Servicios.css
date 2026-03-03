@@ -168,6 +168,10 @@
     height: 140px;
   }
 
+  .servicios-proceso-titulo {
+    margin-top: calc(var(--spacing-xl) * 2);
+  }
+
   .proceso-grid {
     flex-direction: column;
     align-items: center;
@@ -175,8 +179,14 @@
   }
 
   .proceso-card {
-    width: 100%;
-    max-width: 100%;
+    width: 160px;
+    max-width: 160px;
     flex: none;
+  }
+
+  .proceso-imagen {
+    width: 140px;
+    height: 140px;
+    aspect-ratio: unset;
   }
 }
