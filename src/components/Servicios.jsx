@@ -56,7 +56,7 @@ const proceso = [
   {
     id: 'cierre',
     titulo: 'Cierre',
-    subtitulo: 'Alta...',
+    subtitulo: 'Cuando hayamos llegado, será tu momento de caminar sola. Dedicaremos unas sesiones de seguimiento y este siempre será un espacio donde volver.',
     imagen: '/procesos_cierre.png',
   },
 ];
