@@ -163,15 +163,12 @@
 }
 
 .hero-sobre-top {
-  display: flex;
-  gap: var(--spacing-xl);
   max-width: 1000px;
   margin: 0 auto var(--spacing-sm);
-  align-items: flex-start;
 }
 
 .hero-sobre-text {
-  flex: 1;
+  overflow: hidden;
 }
 
 .hero-sobre-text p {
@@ -191,9 +188,9 @@
 }
 
 .hero-sobre-photo {
-  flex-shrink: 0;
+  float: right;
   width: 300px;
-  margin-top: 12rem;
+  margin: 0 0 var(--spacing-md) var(--spacing-xl);
 }
 
 .hero-sobre-photo img {
@@ -291,13 +288,11 @@
     grid-row: 2;
   }
 
-  .hero-sobre-top {
-    flex-direction: column-reverse;
-  }
-
   .hero-sobre-photo {
+    float: none;
     width: 100%;
     max-width: 280px;
+    margin: 0 auto var(--spacing-md);
   }
 
   .hero-sobre-bottom {
