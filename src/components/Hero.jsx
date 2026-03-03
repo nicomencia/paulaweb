@@ -34,7 +34,7 @@ export default function Hero({ setCurrentView }) {
       <section className="hero">
         <div className="hero-content">
           <h1 className="hero-name">Paula Sastre Valverde</h1>
-          <p className="hero-subtitle">Psicóloga</p>
+          <p className="hero-subtitle">Psicóloga integrativa</p>
         </div>
       </section>
 
