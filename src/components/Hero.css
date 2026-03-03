@@ -245,8 +245,8 @@
 
 @media (max-width: 768px) {
   .hero {
-    background-size: contain;
-    background-position: top center;
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
   }
 
@@ -256,6 +256,11 @@
     justify-content: space-between;
     height: 100vh;
     padding-top: 160px;
+  }
+
+  .hero-name,
+  .hero-subtitle {
+    color: var(--color-blue);
   }
 
   .hero-social {
