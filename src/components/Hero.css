@@ -229,7 +229,7 @@
 
 .hero-sobre-cita p {
   font-family: var(--font-serif);
-  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  font-size: clamp(0.9rem, 1.3vw, 1.05rem);
   line-height: 1.8;
   color: var(--color-black);
   margin: 0 0 var(--spacing-sm);
