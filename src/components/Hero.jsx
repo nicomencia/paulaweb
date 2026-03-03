@@ -41,7 +41,7 @@ export default function Hero({ setCurrentView }) {
       <section className="hero-intro">
         <div className="hero-intro-inner">
           <p className="hero-intro-text">
-            La terapia es aquel lugar seguro en el que poder (re)conocerte y mirarte sin juicios, con calma y con la calidez de un acompañamiento profesional. Durante tu proceso cada emoción, pensamiento y vivencia encuentran su lugar, permitiéndote integrar tus heridas y encontrar el equilibrio en este mundo lleno de caos. Recuperaremos tus herramientas, adquirirás nuevos aprendizajes y mejorarás la relación contigo misma y las demás.
+            La terapia es aquel lugar seguro en el que poder (re)conocerte y mirarte sin juicios, con calma y con la calidez de un acompañamiento profesional. Durante tu proceso cada emoción, pensamiento y vivencia encuentran su lugar, permitiéndote integrar tus heridas y encontrar el equilibrio<br />en este mundo lleno de caos. Recuperaremos tus herramientas, adquirirás nuevos aprendizajes y mejorarás la relación<br />contigo misma y las demás.
           </p>
           <p className="hero-intro-quote">
             <em>El primer paso para sanar es reconocer<br />que mereces vivir en bienestar.</em>
