@@ -251,28 +251,28 @@
   .hero {
     background: none;
     height: auto;
-    position: relative;
-    display: block;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content {
+    order: 1;
+    position: static;
+    width: 100%;
+    padding: 100px var(--spacing-md) var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .hero-bg-img {
     display: block;
-    width: 100%;
+    order: 2;
+    width: 80%;
     height: auto;
-  }
-
-  .hero-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    padding-top: 80px;
+    margin: 0 auto var(--spacing-lg);
   }
 
   .hero-name,
