@@ -41,7 +41,7 @@ export default function Footer({ setCurrentView }) {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Paula Sastre. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Paula Sastre Valverde. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
