@@ -90,7 +90,7 @@ export default function Hero({ setCurrentView }) {
             <img src="/sobreMi2.png" alt="" />
           </div>
           <blockquote className="hero-sobre-cita">
-            <p>Conozca todas las teorías, domine todas las técnicas, pero al tocar un alma humana sea apenas otra alma humana.</p>
+            <p><em>Conozca todas las teorías,<br />domine todas las técnicas,<br />pero al tocar un alma humana<br />sea apenas otra alma humana.</em></p>
             <cite>Carl G. Jung</cite>
           </blockquote>
         </div>

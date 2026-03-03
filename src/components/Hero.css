@@ -199,16 +199,20 @@
 }
 
 .hero-sobre-bottom {
-  display: flex;
-  gap: var(--spacing-xl);
-  max-width: 1000px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr auto;
+  max-width: 1200px;
   margin: 0 auto;
-  align-items: center;
+  min-height: 520px;
+  padding: 0 var(--spacing-lg);
 }
 
 .hero-sobre-imagen {
-  flex-shrink: 0;
-  width: 340px;
+  grid-column: 1;
+  grid-row: 1;
+  width: 420px;
+  align-self: start;
 }
 
 .hero-sobre-imagen img {
@@ -217,24 +221,28 @@
 }
 
 .hero-sobre-cita {
-  flex: 1;
+  grid-column: 2;
+  grid-row: 2;
   margin: 0;
   padding: 0;
   text-align: right;
+  align-self: end;
+  padding-bottom: var(--spacing-lg);
 }
 
 .hero-sobre-cita p {
   font-family: var(--font-serif);
-  font-size: clamp(1rem, 1.6vw, 1.2rem);
-  line-height: 1.7;
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  line-height: 1.8;
   color: var(--color-black);
   margin: 0 0 var(--spacing-sm);
 }
 
 .hero-sobre-cita cite {
   font-family: var(--font-serif);
-  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  font-size: clamp(0.95rem, 1.3vw, 1.1rem);
   font-style: normal;
+  font-weight: 600;
   color: var(--color-black);
 }
 
@@ -296,14 +304,22 @@
   }
 
   .hero-sobre-bottom {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    min-height: auto;
   }
 
   .hero-sobre-imagen {
+    grid-column: 1;
+    grid-row: 1;
     width: 100%;
+    max-width: 380px;
   }
 
   .hero-sobre-cita {
-    text-align: left;
+    grid-column: 1;
+    grid-row: 2;
+    text-align: right;
+    padding-bottom: var(--spacing-md);
   }
 }
