@@ -1,4 +1,4 @@
-.hero {
+.hero { 
   height: 100vh;
   background: linear-gradient(rgba(0, 82, 204, 0.1), rgba(0, 82, 204, 0.05)),
               url('/fondo.png') center/cover;
@@ -163,12 +163,15 @@
 }
 
 .hero-sobre-top {
-  max-width: 875px;
+  display: flex;
+  gap: var(--spacing-xl);
+  max-width: 1000px;
   margin: 0 auto var(--spacing-sm);
+  align-items: flex-start;
 }
 
 .hero-sobre-text {
-  overflow: hidden;
+  flex: 1;
 }
 
 .hero-sobre-text p {
@@ -187,10 +190,10 @@
   margin: 0 0 var(--spacing-md);
 }
 
-.hero-sobre-photo { 
-  float: right;
-  width: 350px;   
-  margin: 0 0 var(--spacing-md) var(--spacing-xl);
+.hero-sobre-photo {
+  flex-shrink: 0;
+  width: 200px;
+  margin-top: 5rem;
 }
 
 .hero-sobre-photo img {
@@ -199,20 +202,16 @@
 }
 
 .hero-sobre-bottom {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr auto;
+  display: flex;
+  gap: var(--spacing-xl);
   max-width: 1000px;
   margin: 0 auto;
-  min-height: 520px;
-  padding: 0 var(--spacing-lg);
+  align-items: center;
 }
 
 .hero-sobre-imagen {
-  grid-column: 1;
-  grid-row: 1;
-  width: 380px;
-  align-self: start;
+  flex-shrink: 0;
+  width: 340px;
 }
 
 .hero-sobre-imagen img {
@@ -221,28 +220,24 @@
 }
 
 .hero-sobre-cita {
-  grid-column: 2;
-  grid-row: 2;
+  flex: 1;
   margin: 0;
   padding: 0;
   text-align: right;
-  align-self: end;
-  padding-bottom: var(--spacing-lg);
 }
 
 .hero-sobre-cita p {
   font-family: var(--font-serif);
-  font-size: clamp(1rem, 1.6vw, 1.25rem);
-  line-height: 1.8;
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  line-height: 1.7;
   color: var(--color-black);
   margin: 0 0 var(--spacing-sm);
 }
 
 .hero-sobre-cita cite {
   font-family: var(--font-serif);
-  font-size: clamp(0.95rem, 1.3vw, 1.1rem);
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
   font-style: normal;
-  font-weight: 600;
   color: var(--color-black);
 }
 
@@ -296,30 +291,24 @@
     grid-row: 2;
   }
 
+  .hero-sobre-top {
+    flex-direction: column-reverse;
+  }
+
   .hero-sobre-photo {
-    float: none;
     width: 100%;
     max-width: 280px;
-    margin: 0 auto var(--spacing-md);
   }
 
   .hero-sobre-bottom {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    min-height: auto;
+    flex-direction: column;
   }
 
   .hero-sobre-imagen {
-    grid-column: 1;
-    grid-row: 1;
     width: 100%;
-    max-width: 200px;
   }
 
   .hero-sobre-cita {
-    grid-column: 1;
-    grid-row: 2;
-    text-align: right;
-    padding-bottom: var(--spacing-md);
+    text-align: left;
   }
 }
