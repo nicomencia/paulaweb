@@ -1,4 +1,4 @@
-.hero { 
+.hero {
   height: 100vh;
   background: linear-gradient(rgba(0, 82, 204, 0.1), rgba(0, 82, 204, 0.05)),
               url('/fondo.png') center/cover;
@@ -192,7 +192,7 @@
 
 .hero-sobre-photo {
   flex-shrink: 0;
-  width: 200px;
+  width: 380px;
   margin-top: 5rem;
 }
 
