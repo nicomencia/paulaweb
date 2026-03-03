@@ -87,7 +87,7 @@
 
 .hero-intro {
   background: var(--color-cream);
-  padding: var(--spacing-xl) var(--spacing-lg) var(--spacing-xl);
+  padding: var(--spacing-xl) var(--spacing-lg) var(--spacing-lg);
   display: flex;
   align-items: flex-start;
 }
@@ -128,7 +128,7 @@
 }
 
 .hero-servicios {
-  padding: var(--spacing-md) var(--spacing-lg) var(--spacing-xl);
+  padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-lg);
   background: var(--color-cream);
 }
 
@@ -154,7 +154,7 @@
 
 .hero-sobre {
   background: var(--color-cream);
-  padding: var(--spacing-md) var(--spacing-lg) var(--spacing-xl);
+  padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-xl);
 }
 
 .hero-sobre-top {
