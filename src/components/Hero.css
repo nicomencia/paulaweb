@@ -190,7 +190,7 @@
 .hero-sobre-photo {
   float: right;
   width: 300px;
-  margin: 6rem 0 var(--spacing-md) var(--spacing-xl);
+  margin: 16rem 0 var(--spacing-md) var(--spacing-xl);
 }
 
 .hero-sobre-photo img {
