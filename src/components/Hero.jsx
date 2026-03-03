@@ -75,10 +75,10 @@ export default function Hero({ setCurrentView }) {
         <div className="hero-sobre-top">
           <div className="hero-sobre-text">
             <h3 className="hero-sobre-titulo">Sobre mi...</h3>
+            <p className="hero-sobre-p-full">Soy Paula Sastre Valverde, psicóloga sanitaria y personita curiosa siempre buscando la forma de conectar consigo misma, su creatividad, las demás y con el entorno en el que vive.</p>
             <div className="hero-sobre-photo">
               <img src="/sobreMi.jpg" alt="Paula Sastre" />
             </div>
-            <p>Soy Paula Sastre Valverde, psicóloga sanitaria y personita curiosa siempre buscando la forma de conectar consigo misma, su creatividad, las demás y con el entorno en el que vive.</p>
             <p>Mi enfoque terapéutico se basa en la integración de diferentes modelos y técnicas, lo cual me permite adaptarme a las necesidades de las personas a las que acompaño y ofrecerles las visiones más adecuadas a su momento vital.</p>
             <p>Dada mi diversa formación y experiencia, integro la perspectiva feminista e interseccional, reconociendo los malestares y opresiones sistemáticas que nos atraviesan y ofreciendo una mirada crítica sobre nuestro contexto y sus aprendizajes.</p>
             <p>Ofrezco un trabajo integral de cuerpo, mente y emociones, no dejando nada atrás.</p>
