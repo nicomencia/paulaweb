@@ -44,7 +44,7 @@ const proceso = [
   {
     id: 'devolucion',
     titulo: 'Devolución',
-    subtitulo: 'Juntas...',
+    subtitulo: 'Juntas reajustaremos objetivos',
     imagen: '/procesos_devolucion.png',
   },
   {
