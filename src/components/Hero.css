@@ -193,6 +193,7 @@
 .hero-sobre-photo {
   flex-shrink: 0;
   width: 200px;
+  margin-top: 3.2rem;
 }
 
 .hero-sobre-photo img {
