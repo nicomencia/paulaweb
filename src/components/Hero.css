@@ -154,7 +154,8 @@
 
 .hero-sobre {
   background: #959E66;
-  padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-xl);
+  padding: var(--spacing-xl) var(--spacing-lg) var(--spacing-xl);
+  padding-top: calc(var(--spacing-xl) * 2);
 }
 
 .hero-sobre-top {
