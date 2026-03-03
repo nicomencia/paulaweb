@@ -82,7 +82,7 @@ export default function Hero({ setCurrentView }) {
             <p>Recuerda que eres mucho más que tus problemas y en esto se basa mi intervención. Miraremos con respeto y ternura cada parte de tu ser y (re)conoceremos tus herramientas y fortalezas, mientras integramos aquello que busca su lugar.</p>
           </div>
           <div className="hero-sobre-photo">
-            <img src="/paula.jpg" alt="Paula Sastre" />
+            <img src="/sobreMi.jpg" alt="Paula Sastre" />
           </div>
         </div>
         <div className="hero-sobre-bottom">
