@@ -201,7 +201,7 @@
 
 .hero-sobre-bottom {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: var(--spacing-xl);
   max-width: 1200px;
   margin: 0 auto;
