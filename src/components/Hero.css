@@ -189,7 +189,7 @@
 
 .hero-sobre-photo {
   float: right;
-  width: 300px;
+  width: 380px;
   margin: 0 0 var(--spacing-md) var(--spacing-xl);
 }
 
@@ -202,7 +202,7 @@
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: 1fr auto;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   min-height: 520px;
   padding: 0 var(--spacing-lg);
@@ -211,7 +211,7 @@
 .hero-sobre-imagen {
   grid-column: 1;
   grid-row: 1;
-  width: 420px;
+  width: 380px;
   align-self: start;
 }
 
