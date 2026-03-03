@@ -249,7 +249,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    background: none;
+    background: var(--color-cream);
     height: auto;
     position: static;
     display: flex;
@@ -261,7 +261,7 @@
     order: 1;
     position: static;
     width: 100%;
-    padding: 100px var(--spacing-md) var(--spacing-md);
+    padding: 140px var(--spacing-md) var(--spacing-md);
     display: flex;
     flex-direction: column;
     align-items: center;
