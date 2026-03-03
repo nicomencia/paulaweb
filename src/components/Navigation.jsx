@@ -19,7 +19,7 @@ export default function Navigation({ currentView, setCurrentView }) {
             onClick={() => handleNavClick('home')}
             aria-label="Ir a inicio"
           >
-            <img src="/logo.png" alt="Paula Saste" className="nav-logo" />
+            <img src="/logo.png" alt="Paula Sastre Valverde" className="nav-logo" />
           </button>
         )}
 
