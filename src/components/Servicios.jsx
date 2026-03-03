@@ -32,7 +32,7 @@ const proceso = [
   {
     id: 'primera-visita',
     titulo: 'Primera Visita',
-    subtitulo: 'En esta sesión...',
+    subtitulo: 'Haremos una primera fotografía de lo que te trae a terapia, quién eres y tu contexto.',
     imagen: '/procesos_visita.png',
   },
   {
