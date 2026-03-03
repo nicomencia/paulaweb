@@ -199,20 +199,17 @@
 }
 
 .hero-sobre-bottom {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr auto;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
   max-width: 1200px;
   margin: 0 auto;
-  min-height: 520px;
-  padding: 0 var(--spacing-lg);
+  padding: var(--spacing-lg) var(--spacing-lg);
 }
 
 .hero-sobre-imagen {
-  grid-column: 1;
-  grid-row: 1;
+  flex-shrink: 0;
   width: 420px;
-  align-self: start;
 }
 
 .hero-sobre-imagen img {
@@ -221,13 +218,10 @@
 }
 
 .hero-sobre-cita {
-  grid-column: 2;
-  grid-row: 2;
+  flex: 1;
   margin: 0;
   padding: 0;
   text-align: right;
-  align-self: end;
-  padding-bottom: var(--spacing-lg);
 }
 
 .hero-sobre-cita p {
@@ -304,21 +298,16 @@
   }
 
   .hero-sobre-bottom {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    min-height: auto;
+    flex-direction: column;
+    align-items: center;
   }
 
   .hero-sobre-imagen {
-    grid-column: 1;
-    grid-row: 1;
     width: 100%;
     max-width: 380px;
   }
 
   .hero-sobre-cita {
-    grid-column: 1;
-    grid-row: 2;
     text-align: right;
     padding-bottom: var(--spacing-md);
   }
