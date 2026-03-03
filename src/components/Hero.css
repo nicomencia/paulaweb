@@ -17,6 +17,7 @@
 .hero-name {
   font-size: clamp(3rem, 8vw, 6rem);
   color: var(--color-white);
+  font-family: var(--font-display);
   font-weight: 400;
   letter-spacing: 0.04em;
   margin: 0 0 var(--spacing-sm);
@@ -27,7 +28,8 @@
 .hero-subtitle {
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   color: var(--color-white);
-  font-weight: 300;
+  font-family: var(--font-display);
+  font-weight: 400;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   margin: 0 0 var(--spacing-lg);
