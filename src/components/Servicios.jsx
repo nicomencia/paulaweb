@@ -50,7 +50,7 @@ const proceso = [
   {
     id: 'proceso',
     titulo: 'Proceso',
-    subtitulo: 'Caminaremos...',
+    subtitulo: 'Caminaremos, a tu ritmo, y haciendo los ajustes necesarios, hacia aquellos lugares que nos hayamos propuesto.',
     imagen: '/procesos_proceso.png',
   },
   {
