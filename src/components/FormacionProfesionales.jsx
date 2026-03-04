@@ -9,10 +9,8 @@ export default function FormacionProfesionales({ onBack }) {
       </div>
 
       <div className="sp-texto-centrado">
-        <p>Un espacio de aprendizaje y crecimiento para profesionales del ámbito de la salud mental, educación y acompañamiento.</p>
-        <p>Talleres y formaciones orientados a ampliar la mirada clínica, integrar nuevas herramientas terapéuticas y enriquecer la práctica profesional.</p>
-        <p>Desde la teoría hacia la experiencia vivida, con un enfoque práctico, reflexivo y aplicable.</p>
-        <p>Porque cuidar a quienes cuidan también es parte del trabajo.</p>
+        <p>Si estás buscando una profesional que imparta pequeñas píldoras formativas sobre psicoeducación emocional, trauma, prevención del ASI, crisis vitales, gestión de conflictos y habilidades sociales, o el uso del arte como herramienta terapéutica, entre otros… ¡Soy tu persona!.</p>
+        <p>Cuéntame qué necesitas y juntas generaremos un espacio riguroso y vivencial, donde integro teoría y práctica desde una mirada integradora, sensible y adaptada al contexto y necesidades del grupo.</p>
       </div>
 
     </section>
