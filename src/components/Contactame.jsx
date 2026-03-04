@@ -1,21 +1,44 @@
 import { useState } from 'react';
 import './Contactame.css';
 
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
+const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
+
 export default function Contactame() {
   const [formData, setFormData] = useState({ nombre: '', email: '', mensaje: '' });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const { nombre, email, mensaje } = formData;
-    const subject = encodeURIComponent(`Mensaje de ${nombre}`);
-    const body = encodeURIComponent(`Nombre: ${nombre}\nEmail: ${email}\n\n${mensaje}`);
-    window.location.href = `mailto:paulaysusespacios@gmail.com?subject=${subject}&body=${body}`;
-    setSubmitted(true);
+    setLoading(true);
+    setError(null);
+
+    try {
+      const res = await fetch(`${SUPABASE_URL}/functions/v1/send-contact-email`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) {
+        throw new Error('No se pudo enviar el mensaje. Inténtalo de nuevo.');
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -89,7 +112,10 @@ export default function Contactame() {
                   placeholder="Mensaje"
                 />
               </div>
-              <button type="submit" className="contactame-btn">Enviar</button>
+              {error && <p className="contactame-error">{error}</p>}
+              <button type="submit" className="contactame-btn" disabled={loading}>
+                {loading ? 'Enviando...' : 'Enviar'}
+              </button>
             </form>
           )}
         </div>

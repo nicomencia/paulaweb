@@ -163,6 +163,18 @@
   opacity: 0.75;
 }
 
+.contactame-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.contactame-error {
+  color: #c0392b;
+  font-size: 0.9rem;
+  margin-top: var(--spacing-sm);
+  margin-bottom: 0;
+}
+
 .contactame-success {
   padding: var(--spacing-md) 0;
   color: var(--color-gray);
