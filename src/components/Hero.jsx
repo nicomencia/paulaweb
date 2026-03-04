@@ -22,7 +22,7 @@ const servicios = [
   },
   {
     id: 'formacion-profesionales',
-    titulo: 'Formación para Profesionales',
+    titulo: 'Formación',
     subtitulo: null,
     imagen: '/servicios_formacion.png',
   },
