@@ -16,18 +16,6 @@ export default function ArteterapiaGrupal({ onBack }) {
         <p>Donde la creatividad se convierte en una herramienta de autoconocimiento y transformación.</p>
       </div>
 
-      <div className="sp-precios" style={{ gridTemplateColumns: '1fr' }}>
-        <div className="sp-precio-bloque">
-          <h2 className="sp-precio-ciudad">BARCELONA</h2>
-          <div className="sp-precio-lugar">
-            <p><strong>Espacio ATMOS</strong></p>
-            <p>CASA COMALAT</p>
-            <p>Avinguda Diagonal 442, 3º 1º</p>
-          </div>
-        </div>
-      </div>
-
-      <p className="sp-sesiones">Consulta próximas fechas y grupos</p>
     </section>
   );
 }
