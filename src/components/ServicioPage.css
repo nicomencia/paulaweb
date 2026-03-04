@@ -1,7 +1,7 @@
 .servicio-page {
   min-height: 100vh;
   background: var(--color-cream);
-  padding: var(--spacing-xl) 0 var(--spacing-lg);
+  padding: calc(var(--spacing-xl) + 3rem) 0 var(--spacing-lg);
   font-family: var(--font-serif);
   color: var(--color-black);
 }
@@ -9,7 +9,7 @@
 .sp-header {
   position: relative;
   text-align: center;
-  padding: 0 var(--spacing-md) var(--spacing-lg);
+  padding: 0 var(--spacing-md) var(--spacing-sm);
 }
 
 .sp-back {
@@ -188,7 +188,7 @@
 
 @media (max-width: 768px) {
   .servicio-page {
-    padding: 5rem 0 var(--spacing-lg);
+    padding: 7rem 0 var(--spacing-lg);
   }
 
   .sp-body {
