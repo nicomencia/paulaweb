@@ -13,7 +13,7 @@ export default function FormacionProfesionales({ onBack }) {
         <p>¡Soy tu persona!</p>
         <p>Cuéntame qué necesitas y juntas generaremos un espacio riguroso y vivencial, donde integro teoría y práctica desde una mirada integradora, sensible y adaptada al contexto y necesidades del grupo.</p>
 
-        <p>Barcelona · Online</p>
+        <p><strong>Barcelona · Online</strong></p>
       
       </div>
 
