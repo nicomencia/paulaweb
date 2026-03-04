@@ -1,21 +1,22 @@
 .terapia-individual {
   min-height: 100vh;
   background: var(--color-cream);
-  padding: var(--spacing-xl) 0 var(--spacing-lg);
+  padding: calc(var(--spacing-xl) + 3rem) 0 var(--spacing-lg);
   font-family: var(--font-serif);
   color: var(--color-black);
 }
 
 .ti-header {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  padding: 0 var(--spacing-md) var(--spacing-lg);
+  padding: 0 var(--spacing-md) var(--spacing-sm);
+  gap: var(--spacing-sm);
 }
 
 .ti-back {
-  position: absolute;
-  left: var(--spacing-md);
-  top: 0;
+  align-self: flex-start;
   font-family: var(--font-serif);
   font-size: 1rem;
   color: var(--color-black);
@@ -142,7 +143,7 @@
 
 @media (max-width: 768px) {
   .terapia-individual {
-    padding: 5rem 0 var(--spacing-lg);
+    padding: 7rem 0 var(--spacing-lg);
   }
 
   .ti-body {
@@ -158,9 +159,4 @@
     align-items: flex-start;
   }
 
-  .ti-back {
-    position: static;
-    display: block;
-    margin-bottom: var(--spacing-sm);
-  }
 }

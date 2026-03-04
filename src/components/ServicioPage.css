@@ -7,15 +7,16 @@
 }
 
 .sp-header {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: 0 var(--spacing-md) var(--spacing-sm);
+  gap: var(--spacing-sm);
 }
 
 .sp-back {
-  position: absolute;
-  left: var(--spacing-md);
-  top: 0;
+  align-self: flex-start;
   font-family: var(--font-serif);
   font-size: 1rem;
   color: var(--color-black);
@@ -204,9 +205,4 @@
     align-items: flex-start;
   }
 
-  .sp-back {
-    position: static;
-    display: block;
-    margin-bottom: var(--spacing-sm);
-  }
 }
