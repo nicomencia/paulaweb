@@ -9,6 +9,7 @@ export default function Footer({ setCurrentView }) {
             <img src="/logo.png" alt="Paula Sastre" className="footer-logo" />
             <p className="footer-name">Paula Sastre Valverde</p>
             <p>Psicóloga Integrativa</p>
+            <p>(COL. 30979)</p>
           </div>
 
           <div className="footer-links">
