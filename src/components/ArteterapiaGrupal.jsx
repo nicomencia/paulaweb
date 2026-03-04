@@ -20,6 +20,8 @@ export default function ArteterapiaGrupal({ onBack }) {
         </ul>
         <p>Si deseas proponer un espacio grupal (asociaciones, centros educativos, equipos de trabajo, colectivos…), estaré encantada de escucharte y valorar juntas una propuesta.</p>
         <p>Próximamente anunciaré nuevos grupos en Barcelona, con diversas temáticas y un encuadre específico, adaptado a las necesidades de las personas que lo conformen.</p>
+
+        <p>Barcelona · Online</p>
       </div>
 
     </section>
