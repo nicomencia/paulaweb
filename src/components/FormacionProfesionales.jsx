@@ -12,6 +12,9 @@ export default function FormacionProfesionales({ onBack }) {
         <p>Si estás buscando una profesional que imparta pequeñas píldoras formativas sobre psicoeducación emocional, trauma, prevención del ASI, crisis vitales, gestión de conflictos y habilidades sociales, o el uso del arte como herramienta terapéutica, entre otros…</p>
         <p>¡Soy tu persona!</p>
         <p>Cuéntame qué necesitas y juntas generaremos un espacio riguroso y vivencial, donde integro teoría y práctica desde una mirada integradora, sensible y adaptada al contexto y necesidades del grupo.</p>
+
+        <p>Barcelona </p>
+      
       </div>
 
     </section>
