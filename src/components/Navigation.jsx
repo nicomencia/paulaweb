@@ -1,14 +1,27 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import './Navigation.css';
 
 export default function Navigation({ currentView, setCurrentView }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [serviciosOpen, setServiciosOpen] = useState(false);
+  const dropdownRef = useRef(null);
   const isHome = currentView === 'home';
 
   const handleNavClick = (view) => {
     setCurrentView(view);
     setIsOpen(false);
+    setServiciosOpen(false);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+        setServiciosOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   return (
     <nav className={`navigation ${!isHome ? 'navigation--solid' : ''}`}>
@@ -39,10 +52,46 @@ export default function Navigation({ currentView, setCurrentView }) {
               Quién soy
             </button>
           </li>
-          <li>
-            <button onClick={() => handleNavClick('servicios')}>
+          <li className="nav-dropdown-wrapper" ref={dropdownRef}>
+            <button
+              className="nav-dropdown-trigger"
+              onClick={() => setServiciosOpen(!serviciosOpen)}
+            >
               Servicios
+              <svg
+                className={`dropdown-chevron ${serviciosOpen ? 'dropdown-chevron--open' : ''}`}
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <polyline points="2,4 6,8 10,4" />
+              </svg>
             </button>
+            <ul className={`nav-dropdown ${serviciosOpen ? 'nav-dropdown--open' : ''}`}>
+              <li>
+                <button onClick={() => handleNavClick('terapia-individual')}>
+                  Terapia Individual
+                </button>
+              </li>
+              <li>
+                <button onClick={() => handleNavClick('terapia-pareja')}>
+                  Terapia de Pareja
+                </button>
+              </li>
+              <li>
+                <button onClick={() => handleNavClick('arteterapia-grupal')}>
+                  Arteterapia Grupal
+                </button>
+              </li>
+              <li>
+                <button onClick={() => handleNavClick('formacion-profesionales')}>
+                  Formación
+                </button>
+              </li>
+            </ul>
           </li>
           <li>
             <button onClick={() => handleNavClick('contactame')}>
