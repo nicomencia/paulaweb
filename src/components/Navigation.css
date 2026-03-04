@@ -212,7 +212,7 @@
     position: static;
     transform: none;
     box-shadow: none;
-    background: rgba(0, 0, 0, 0.04);
+    background: white;
     border-radius: 6px;
     margin-top: 4px;
     padding: 4px 0;
@@ -232,5 +232,10 @@
   .nav-dropdown li button {
     padding: 8px 16px;
     font-size: 0.85rem;
+    color: var(--color-black) !important;
+  }
+
+  .nav-dropdown li button:hover {
+    background: rgba(0, 0, 0, 0.05);
   }
 }
