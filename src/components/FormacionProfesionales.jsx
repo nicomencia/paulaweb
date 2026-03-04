@@ -5,7 +5,7 @@ export default function FormacionProfesionales({ onBack }) {
     <section className="servicio-page">
       <div className="sp-header">
         <button className="sp-back" onClick={onBack}>← Volver</button>
-        <h1 className="sp-titulo">FORMACIÓN PARA PROFESIONALES</h1>
+        <h1 className="sp-titulo">FORMACIÓN</h1>
       </div>
 
       <div className="sp-texto-centrado">
