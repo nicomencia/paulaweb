@@ -14,5 +14,7 @@ export default function FormacionProfesionales({ onBack }) {
         <p>Desde la teoría hacia la experiencia vivida, con un enfoque práctico, reflexivo y aplicable.</p>
         <p>Porque cuidar a quienes cuidan también es parte del trabajo.</p>
       </div>
+
+    </section>
   );
 }
