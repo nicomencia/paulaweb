@@ -52,14 +52,14 @@
 .ti-columna-izquierda {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .ti-temas {
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .ti-temas li {
@@ -82,7 +82,8 @@
 }
 
 .ti-columna-derecha p {
-  font-size: clamp(0.95rem, 1.5vw, 1.15rem);
+  font-size: clamp(0.75rem, 1.2vw, 0.95rem);
+  font-style: italic;
   line-height: 1.7;
   color: var(--color-black);
 }

@@ -57,6 +57,11 @@
 }
 
 .sp-columna-center {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.sp-columna-center:last-child {
   align-items: center;
   text-align: center;
 }
@@ -65,7 +70,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .sp-temas li {
@@ -84,7 +89,9 @@
   color: var(--color-black);
 }
 
-.sp-columna-center p {
+.sp-columna-center:last-child p {
+  font-size: clamp(0.75rem, 1.2vw, 0.95rem);
+  font-style: italic;
   text-align: center;
 }
 
