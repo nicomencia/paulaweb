@@ -51,7 +51,7 @@ export default function TerapiaPareja({ onBack }) {
             <p><strong>Espacio ATMOS</strong></p>
             <p>CASA COMALAT</p>
             <p>Avinguda Diagonal 442, 3º 1º</p>
-            <img src="/Atmos.jpg" alt="Espacio ATMOS" />
+            <img src="/atmos.jpg" alt="Espacio ATMOS" />
           </div>
         </div>
 
