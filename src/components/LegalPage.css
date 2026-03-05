@@ -44,6 +44,7 @@
   line-height: 1.8;
   color: var(--color-black);
   margin-bottom: var(--spacing-sm);
+  text-align: justify;
 }
 
 .legal-subtitulo {
@@ -67,6 +68,7 @@
   line-height: 1.8;
   color: var(--color-black);
   margin-bottom: 0.25rem;
+  text-align: justify;
 }
 
 .legal-content strong {
