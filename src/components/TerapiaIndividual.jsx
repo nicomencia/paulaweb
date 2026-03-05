@@ -66,7 +66,6 @@ export default function TerapiaIndividual({ onBack }) {
 
         <div className="ti-precio-bloque ti-precio-bloque--right">
           <h2 className="ti-precio-ciudad">ONLINE</h2>
-          <img src="/Online55.jpg" alt="Sesión online" className="ti-online-img" />
           <p className="ti-precio-valor">55€</p>
         </div>
       </div>
