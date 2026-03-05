@@ -9,6 +9,9 @@ import TerapiaIndividual from './components/TerapiaIndividual';
 import TerapiaPareja from './components/TerapiaPareja';
 import ArteterapiaGrupal from './components/ArteterapiaGrupal';
 import FormacionProfesionales from './components/FormacionProfesionales';
+import AvisoLegal from './components/AvisoLegal';
+import PoliticaPrivacidad from './components/PoliticaPrivacidad';
+import PoliticaCookies from './components/PoliticaCookies';
 
 export default function App() {
   const [currentView, setCurrentView] = useState('home');
@@ -55,6 +58,12 @@ export default function App() {
         return <FormacionProfesionales onBack={goBack} />;
       case 'contactame':
         return <Contactame />;
+      case 'aviso-legal':
+        return <AvisoLegal onBack={goBack} />;
+      case 'politica-privacidad':
+        return <PoliticaPrivacidad onBack={goBack} />;
+      case 'politica-cookies':
+        return <PoliticaCookies onBack={goBack} />;
       default:
         return <Hero setCurrentView={navigateTo} />;
     }

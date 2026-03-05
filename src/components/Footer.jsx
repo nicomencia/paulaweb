@@ -49,6 +49,13 @@ export default function Footer({ setCurrentView }) {
         </div>
 
         <div className="footer-bottom">
+          <div className="footer-legal-links">
+            <button onClick={() => setCurrentView('aviso-legal')}>Aviso legal</button>
+            <span className="footer-legal-sep">·</span>
+            <button onClick={() => setCurrentView('politica-privacidad')}>Política de privacidad</button>
+            <span className="footer-legal-sep">·</span>
+            <button onClick={() => setCurrentView('politica-cookies')}>Política de cookies</button>
+          </div>
           <p>&copy; {new Date().getFullYear()} Paula Sastre Valverde. Todos los derechos reservados.</p>
         </div>
       </div>
