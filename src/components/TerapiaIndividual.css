@@ -68,6 +68,13 @@
   color: var(--color-black);
 }
 
+.ti-temas li.ti-temas-punto::before {
+  content: '•';
+  color: #8B5E3C;
+  margin-right: 0.5em;
+  font-size: 0.8em;
+}
+
 .ti-temas-intro {
   font-style: italic;
   margin-bottom: 0.25rem;
