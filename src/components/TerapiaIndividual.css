@@ -137,6 +137,7 @@
   height: auto;
   border-radius: 8px;
   object-fit: cover;
+  margin-top: 0.5rem;
 }
 
 .ti-precio-valor {

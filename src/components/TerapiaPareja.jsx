@@ -57,6 +57,7 @@ export default function TerapiaPareja({ onBack }) {
 
         <div className="sp-precio-bloque sp-precio-bloque--right">
           <h2 className="sp-precio-ciudad">ONLINE</h2>
+          <img src="/Online55.jpg" alt="Sesión online" className="sp-online-img" />
           <p className="sp-precio-valor">70€</p>
         </div>
       </div>
