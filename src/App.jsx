@@ -12,6 +12,7 @@ import FormacionProfesionales from './components/FormacionProfesionales';
 import AvisoLegal from './components/AvisoLegal';
 import PoliticaPrivacidad from './components/PoliticaPrivacidad';
 import PoliticaCookies from './components/PoliticaCookies';
+import CookieBanner from './components/CookieBanner';
 
 export default function App() {
   const [currentView, setCurrentView] = useState('home');
@@ -74,6 +75,7 @@ export default function App() {
       <Navigation currentView={currentView} setCurrentView={navigateTo} />
       {renderContent()}
       <Footer setCurrentView={navigateTo} />
+      <CookieBanner onNavigateCookies={() => navigateTo('politica-cookies')} />
     </>
   );
 }

@@ -46,6 +46,16 @@
   margin-bottom: var(--spacing-sm);
 }
 
+.legal-subtitulo {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-blue);
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-xs);
+}
+
 @media (max-width: 768px) {
   .legal-page {
     padding: 7rem 0 var(--spacing-lg);
