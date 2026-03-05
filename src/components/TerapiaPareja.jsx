@@ -29,7 +29,7 @@ export default function TerapiaPareja({ onBack }) {
         <div className="sp-columna sp-columna-center">
           <ul className="sp-temas">
             {temas.map((tema, i) => (
-              <li key={i} className={i === 0 ? 'sp-temas-intro' : ''}>{tema === 'y más...' ? <em>{tema}</em> : tema}</li>
+              <li key={i} className={i === 0 ? 'sp-temas-intro' : tema === 'y más...' ? '' : 'sp-temas-punto'}>{tema === 'y más...' ? <em>{tema}</em> : tema}</li>
             ))}
           </ul>
         </div>
