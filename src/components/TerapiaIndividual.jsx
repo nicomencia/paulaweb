@@ -37,7 +37,7 @@ export default function TerapiaIndividual({ onBack }) {
         <div className="ti-columna-izquierda">
           <ul className="ti-temas">
             {temas.map((tema, i) => (
-              <li key={i} className={i === 0 ? 'ti-temas-intro' : ''}>{tema}</li>
+              <li key={i} className={i === 0 ? 'ti-temas-intro' : ''}>{tema === 'y más...' ? <em>{tema}</em> : tema}</li>
             ))}
           </ul>
         </div>
