@@ -121,7 +121,13 @@
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: var(--color-black);
+  color: #8B5E3C;
+}
+
+.ti-precio-lugar img {
+  width: 100%;
+  display: block;
+  margin-top: 0.5rem;
 }
 
 .ti-precio-valor {
