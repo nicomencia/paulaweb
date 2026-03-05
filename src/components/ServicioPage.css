@@ -134,10 +134,8 @@
 .sp-precio-lugar img {
   display: block;
   margin-top: 0.5rem;
-  max-width: fit-content;
-  width: auto;
+  width: 100%;
   height: auto;
-  max-height: 120px;
 }
 
 .sp-precio-valor {
