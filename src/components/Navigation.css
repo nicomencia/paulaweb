@@ -249,4 +249,13 @@
   .nav-dropdown li button:hover {
     background: rgba(0, 0, 0, 0.05);
   }
+
+  .nav-dropdown-divider {
+    background: rgba(255, 255, 255, 0.5);
+    margin: 2px 12px;
+  }
+
+  .nav-dropdown-header {
+    padding-bottom: 0;
+  }
 }
