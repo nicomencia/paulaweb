@@ -197,7 +197,6 @@ const faqs = [
       <>
         <p>Puedes solicitar una primera visita a través del formulario de contacto de la web o escribiendo a paulaysusespacios@gmail.com, contándome brevemente quién eres, tu disponibilidad horaria y el motivo de consulta.</p>
         <p>Si necesitas cambiar o cancelar una sesión, es importante avisar con al menos 25-48 horas de antelación para poder reorganizar la agenda y la reserva del despacho. Si se entra dentro de las 25 horas, deberás abonar la sesión íntegra (salvo casos de extrema necesidad como accidentes o enfermedad), pues la terapeuta ha reservado el espacio y tiempo para únicamente para ti, y al no cancelar con suficiente antelación, no es posible ofrecer este espacio a otra persona que lo necesite. Agradezco tu comprensión.</p>
-        <p>Si tienes alguna otra duda o sientes que podría ser un buen momento para empezar tu proceso, puedes escribirme y estaré encantada de escucharte.</p>
       </>
     ),
   },
@@ -272,6 +271,7 @@ export default function Servicios({ setCurrentView }) {
               <FaqItem key={faq.id} faq={faq} />
             ))}
           </div>
+          <p className="faq-cierre">Si tienes alguna otra duda o sientes que podría ser un buen momento para empezar tu proceso, puedes escribirme y estaré encantada de escucharte.</p>
         </div>
       </div>
     </section>

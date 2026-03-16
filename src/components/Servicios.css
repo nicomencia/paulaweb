@@ -232,6 +232,16 @@
   gap: 0.25rem;
 }
 
+.faq-cierre {
+  margin-top: var(--spacing-md);
+  text-align: center;
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--color-gray);
+  line-height: 1.7;
+  padding-bottom: var(--spacing-md);
+}
+
 @media (max-width: 768px) {
   .servicios {
     padding: 6rem 0 var(--spacing-xl) 0;
