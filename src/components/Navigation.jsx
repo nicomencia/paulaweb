@@ -71,6 +71,12 @@ export default function Navigation({ currentView, setCurrentView }) {
               </svg>
             </button>
             <ul className={`nav-dropdown ${serviciosOpen ? 'nav-dropdown--open' : ''}`}>
+              <li className="nav-dropdown-header">
+                <button onClick={() => handleNavClick('servicios')} className="nav-dropdown-all">
+                  Todos los servicios
+                </button>
+              </li>
+              <li className="nav-dropdown-divider"></li>
               <li>
                 <button onClick={() => handleNavClick('terapia-individual')}>
                   Terapia Individual
