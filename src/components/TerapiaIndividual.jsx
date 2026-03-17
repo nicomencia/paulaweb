@@ -55,7 +55,7 @@ export default function TerapiaIndividual({ onBack }) {
       <div className="ti-precios">
         <div className="ti-precio-bloque">
           <h2 className="ti-precio-ciudad">BARCELONA</h2>
-          <p className="ti-precio-valor">65€</p>
+          <p className="ti-precio-valor">60€</p>
           <div className="ti-precio-lugar">
             <p><strong>Espacio ATMOS</strong></p>
             <p>CASA COMALAT</p>
@@ -66,7 +66,7 @@ export default function TerapiaIndividual({ onBack }) {
 
         <div className="ti-precio-bloque ti-precio-bloque--right">
           <h2 className="ti-precio-ciudad">ONLINE</h2>
-          <p className="ti-precio-valor">55€</p>
+          <p className="ti-precio-valor">50€</p>
         </div>
       </div>
 
