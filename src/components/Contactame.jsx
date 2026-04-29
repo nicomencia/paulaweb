@@ -30,7 +30,8 @@ export default function Contactame() {
       });
 
       if (!res.ok) {
-        throw new Error('No se pudo enviar el mensaje. Inténtalo de nuevo.');
+        const body = await res.json().catch(() => ({}));
+        throw new Error(body.error || 'No se pudo enviar el mensaje. Inténtalo de nuevo.');
       }
 
       setSubmitted(true);
