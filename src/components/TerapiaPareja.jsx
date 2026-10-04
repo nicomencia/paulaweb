@@ -46,12 +46,8 @@ export default function TerapiaPareja({ onBack }) {
       <div className="sp-precios">
         <div className="sp-precio-bloque">
           <h2 className="sp-precio-ciudad">BARCELONA</h2>
-          <p className="sp-precio-valor">80€</p>
+          <p className="sp-precio-valor">No disponible</p>
           <div className="sp-precio-lugar">
-            <p><strong>Espacio ATMOS</strong></p>
-            <p>CASA COMALAT</p>
-            <p>Avinguda Diagonal 442, 3º 1º</p>
-            <img src="/atmos.jpg" alt="Espacio ATMOS" />
           </div>
         </div>
 
