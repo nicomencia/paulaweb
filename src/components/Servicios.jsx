@@ -154,7 +154,6 @@ const faqs = [
           <li>Un espacio tranquilo donde puedas hablar con privacidad</li>
           <li>Y también suelo recomendar tener cerca una libreta de terapia, bolígrafos y colores para poder anotar o trabajar durante las sesiones.</li>
         </ul>
-        <p>Si prefieres realizar la terapia de forma presencial, puedes encontrarme en Barcelona, en el Espacio ATMOS, situado en la Casa Comalat (Av. Diagonal con Passeig de Gràcia).</p>
       </>
     ),
   },
