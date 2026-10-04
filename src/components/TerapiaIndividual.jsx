@@ -52,8 +52,6 @@ export default function TerapiaIndividual({ onBack }) {
         </div>
       </div>
 
-      <div className="ti-precios">
-        </div>
 
         <div className="ti-precio-bloque ti-precio-bloque--right">
           <h2 className="ti-precio-ciudad">ONLINE</h2>
