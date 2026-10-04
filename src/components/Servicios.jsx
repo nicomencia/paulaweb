@@ -5,7 +5,7 @@ const servicios = [
   {
     id: 'terapia-individual',
     titulo: 'Terapia Individual',
-    subtitulo: 'Barcelona · Online',
+    subtitulo: 'Online',
     imagen: '/servicios_individual.png',
   },
   {
