@@ -11,7 +11,7 @@ const servicios = [
   {
     id: 'terapia-pareja',
     titulo: 'Terapia de Pareja',
-    subtitulo: 'Barcelona · Online',
+    subtitulo: 'Online',
     imagen: '/servicios_pareja.png',
   },
   {
