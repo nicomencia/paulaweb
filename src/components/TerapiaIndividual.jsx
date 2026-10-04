@@ -55,12 +55,8 @@ export default function TerapiaIndividual({ onBack }) {
       <div className="ti-precios">
         <div className="ti-precio-bloque">
           <h2 className="ti-precio-ciudad">BARCELONA</h2>
-          <p className="ti-precio-valor">60€</p>
+          <p className="ti-precio-valor">No disponible</p>
           <div className="ti-precio-lugar">
-            <p><strong>Espacio ATMOS</strong></p>
-            <p>CASA COMALAT</p>
-            <p>Avinguda Diagonal 442, 3º 1º</p>
-            <img src="/atmos.jpg" alt="Espacio ATMOS" />
           </div>
         </div>
 
