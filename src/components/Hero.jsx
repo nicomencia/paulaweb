@@ -5,13 +5,13 @@ const servicios = [
   {
     id: 'terapia-individual',
     titulo: 'Terapia Individual',
-    subtitulo: 'Barcelona · Online',
+    subtitulo: 'Online',
     imagen: '/servicios_individual.png',
   },
   {
     id: 'terapia-pareja',
     titulo: 'Terapia de Pareja',
-    subtitulo: 'Barcelona · Online',
+    subtitulo: 'Online',
     imagen: '/servicios_pareja.png',
   },
   {
