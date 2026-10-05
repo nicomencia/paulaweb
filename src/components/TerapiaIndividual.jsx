@@ -60,8 +60,6 @@ export default function TerapiaIndividual({ onBack }) {
           </div>
         </div>
 
-        <div className="ti-precio-bloque ti-precio-bloque--right">
-        </div>
       </div>
 
       <p className="ti-sesiones">Sesiones de 1 hora</p>
