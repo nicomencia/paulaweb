@@ -45,15 +45,10 @@ export default function TerapiaPareja({ onBack }) {
 
       <div className="sp-precios">
         <div className="sp-precio-bloque">
-          <h2 className="sp-precio-ciudad">BARCELONA</h2>
-          <p className="sp-precio-valor">No disponible</p>
-          <div className="sp-precio-lugar">
-          </div>
-        </div>
-
-        <div className="sp-precio-bloque sp-precio-bloque--right">
           <h2 className="sp-precio-ciudad">ONLINE</h2>
           <p className="sp-precio-valor">70€</p>
+          <div className="sp-precio-lugar">
+          </div>
         </div>
       </div>
 
